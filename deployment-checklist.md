@@ -7,9 +7,9 @@
 The deployments of the core contracts of the Morpho protocol and its periphery are done by the 5/9 multisig of the Morpho DAO ([details](https://docs.morpho.xyz/usdmorpho/governance/zodiac-and-progressive-decentralization). They are done through the [AdmoDeployer contract](https://etherscan.io/address/0x08072d67a6f158fe2c6f21886b0742736e925536).```
 
 - [ ] Before submitting the tx, check that the bytecode used corresponds to the correct version (commit, tag) with the correct paramaters (constructor arguments, initialization arguments).
-- [ ] For an upgradeable contract, an initialilzation tx MUST be done atomically to initialize the contract and avoid it to be hijacked.
+- [ ] For an upgradeable contract, an initialization tx MUST be done atomically to initialize the contract and avoid it to be hijacked.
 - [ ] Once the tx is submitted on the Gnosis Safe, everyone in the "Deployment Team" MUST check it.
-- [ ] Check that the bytecode corresponds to the correct version (commit, tag). 
+- [ ] Check that the bytecode corresponds to the correct version (commit, tag).
 - [ ] Check that the correct paramaters are passed into the constructor. Or, in the case of an upgradeable contract that an initialization tx is done atomically with the correct parameters.
 - [ ] The bytecode MUST be checked on the Gnosis Safe before signing and executing the transaction.
 - [ ] Create a simulation via Gnosis and Tenderly, checking that the deployment went through and that state variables are correctly set.
@@ -21,8 +21,8 @@ The deployments of the core contracts of the Morpho protocol and its periphery a
 
 For less critical pieces of code, a burner might be used for developments. The deployment can the be done via Remix, a js script or a foundry script. The latter being the prefered solution.
 
-- [ ] If a script is used, the script MUST have been reviewed AND approved by the "Solidity Team".
-- [ ] For an upgradeable contract, an initialilzation tx MUST be done in the script to initialize the contract and avoid it to be hijacked.
+- [ ] If a script is used, the script MUST have been reviewed AND approved by the "Deployment Team".
+- [ ] For an upgradeable contract, an initialization tx MUST be done in the script to initialize the contract and avoid it to be hijacked.
 - [ ] Check that if the contract `Ownable`, the ownership is transfered right after deployment in the script.
 - [ ] Check that the deployer account has enough funds.
 - [ ] The deployer account MUST NOT be a personal account.
@@ -33,6 +33,7 @@ For less critical pieces of code, a burner might be used for developments. The d
 - [ ] After deployment, the contract MUST be verified on Etherscan asap. The best way is by using [foundry](https://book.getfoundry.sh/forge/deploying?highlight=verify#verifying-a-pre-existing-contract).
 - [ ] The deployed contract MUST be checked by the "Deployment Team" (ownership, basic getters, code, etc.).
 - [ ] Once verified, the contract MUST be added to Tenderly in the correct projects with the correct labels.
+- [ ] If ther are some governance functions, update the operator accordingly.
 - [ ] Monitor the contracts.
 - [ ] Update Immunefi bounty if necessary.
 

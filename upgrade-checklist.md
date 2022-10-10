@@ -30,8 +30,9 @@ Please refer to the [Deployment Checklist](./deployment-checklist.md) for each c
 
 ### Monitoring Phase
 
-- [ ] Update Immunefi bounty if necessary.
+- [ ] If some changes are made to governance functions, update the operator accordingly.
 - [ ] Monitor contract with Tenderly or custom bots.
+- [ ] Update Immunefi bounty if necessary.
 
 ## Specific Upgrades
 

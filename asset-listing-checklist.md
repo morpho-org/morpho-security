@@ -5,7 +5,6 @@
 - [ ] Only assets that are worth it must be listed.
 - [ ] Follow [Trail Of Bits integration token checklist](https://github.com/crytic/building-secure-contracts/blob/master/development-guidelines/token_integration.md).
 - [ ] Check the ERC20 compliance with [Slither](https://github.com/crytic/slither/wiki/ERC-Conformance).
-- [ ] Asset MUST NOT bring additional risks to Morpho.
 - [ ] Check the pool token code and check the differences with the other pool tokens implementation.
 - [ ] Check if the asset is a rebasing token (such as stETH).
 - [ ] Check the governance discussions and proposal on the underlying pool governance forum that listed this asset and check risk companies report.
