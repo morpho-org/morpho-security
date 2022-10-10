@@ -19,7 +19,7 @@ The deployments of the core contracts of the Morpho protocol and its periphery a
 For less critical pieces of code, a burner might be used for developments. The deployment can the be done via Remix, a js script or a foundry script. The latter being the preferred solution.
 
 - [ ] If a script is used, the script MUST have been reviewed AND approved by the "Deployment Team".
-- [ ] For an upgradeable contract, an initialization transaction MUST be done in the script to initialize the contract and prevent it from be hijacked.
+- [ ] For an upgradeable contract, an initialization transaction MUST be done in the script to initialize the contract and prevent it from being hijacked.
 - [ ] Check that if the contract `Ownable`, the ownership is transferred right after deployment in the script.
 - [ ] Check that the deployer account has enough funds.
 - [ ] The deployer account MUST NOT be a personal account.
