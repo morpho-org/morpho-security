@@ -7,7 +7,7 @@
 The deployments of the core contracts of the Morpho protocol and its periphery are done by the 5/9 multisig of the Morpho DAO ([details](https://docs.morpho.xyz/usdmorpho/governance/zodiac-and-progressive-decentralization). They are done through the [AdmoDeployer contract](https://etherscan.io/address/0x08072d67a6f158fe2c6f21886b0742736e925536).```
 
 - [ ] Before submitting the transaction, check that the bytecode used corresponds to the correct version (commit, tag) with the correct paramaters (constructor and initializer arguments).
-- [ ] For an upgradeable contract, an initialization tx MUST be done atomically to initialize the contract to prevent it from be hijacked.
+- [ ] For an upgradeable contract, an initialization tx MUST be done atomically to initialize the contract to prevent it from being hijacked.
 - [ ] Once the transaction is submitted on the Gnosis Safe, everyone in the "Deployment Team" MUST check the transaction details and bytecode.
 - [ ] Check that the bytecode corresponds to the correct version (commit, tag).
 - [ ] Create a simulation via Gnosis and Tenderly, checking that the deployment goes through and that state variables are set correctly.
