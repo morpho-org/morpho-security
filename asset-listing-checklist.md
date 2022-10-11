@@ -7,7 +7,7 @@
 - [ ] Check the code of the pool token and check for any differences from other pool token implementations.
 - [ ] Check if the asset is a rebasing token (such as stETH) and ensure that it is handled appropriately.
 - [ ] Look through the governance discussions and proposals of the asset in the underlying pool's governance forum and read through any of the asset's risk reports.
-- [ ] Check the risk parameters of the asset on the underlying pool (LTV or LT on Aave and collateral factor on Compound, liquidation incentive).
+- [ ] Check the risk parameters of the asset on the underlying pool (LTV or LT on Aave and collateral factor on Compound, liquidation incentive, interest rates model and reserve factor).
 - [ ] Check if the asset is supply only (if true pause the borrow and disable the P2P).
 - [ ] Check if the asset has a borrow cap.
 - [ ] Check if there exists any other special treatment of the asset in the underlying contracts.
@@ -15,7 +15,7 @@
 
 ## Before Listing
 
-- [ ] If the asset passes the "Discussion Phase", the asset MUST be tested on a fork and fuzzed. The protocol MUST behave as usual with this new asset.
+- [ ] If the asset passes the "Discussion Phase", the asset MUST be tested (integration test and fuzzing) on a fork. The protocol MUST behave as usual with this new asset.
 - [ ] Morpho's liquidation bot MUST be able to liquidate on this asset (if the asset is borrowable).
 
 ## Listing

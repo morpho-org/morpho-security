@@ -18,9 +18,7 @@
 
 ### Upgrade Phase
 
-Please refer to the [Deployment Checklist](./deployment-checklist.md) for each contract deployment.
-
-- [ ] First, deploy the implementation contract.
+- [ ] First, deploy the implementation contract (refer to the [Deployment Checklist](./deployment-checklist.md) for this).
 - [ ] Use the `ProxyAdmin` contract to upgrade the current proxy contract. There are 3 parameters to check:
     - [ ] The first parameter MUST corresponds to the address of the proxy to upgrade.
     - [ ] The second parameter MUST corresponds to the address of the new implementation.
