@@ -33,6 +33,7 @@ Please refer to the [Deployment Checklist](./deployment-checklist.md) for each c
 - [ ] If some changes are made to governance functions, update the operator accordingly.
 - [ ] Monitor contract with Tenderly or custom bots.
 - [ ] Update Immunefi bounty if necessary.
+- [ ] Update the documentation.
 
 ## Specific Upgrades
 

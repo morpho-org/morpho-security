@@ -16,6 +16,7 @@
 ## Before Listing
 
 - [ ] If the asset passes the "Discussion Phase", the asset MUST be tested on a fork and fuzzed. The protocol MUST behave as usual with this new asset.
+- [ ] Morpho's liquidation bot MUST be able to liquidate on this asset (if the asset is borrowable).
 
 ## Listing
 
@@ -31,4 +32,4 @@
   - [ ] P2P and pool indexes have been updated.
   - [ ] Pool token address has been added to the markets created.
   - [ ] The LTV, liquidation threshold, decimals, and liquidation bonus should mirror the underlying pool
-- [ ] Test all four accessible functions in production.
+- [ ] Test `supply`/`borrow`/`repay`/`withdraw` functions in production.

@@ -37,6 +37,7 @@ For less critical pieces of code, a burner might be used for developments. The d
   - [ ] Check the dApps integrations and update them accordingly.
   - [ ] Add/Update the signatures allowed to the Operator contract if needed.
 - [ ] Update Immunefi bounty if necessary.
+- [ ] Update the documentation.
 
 ## Notes
 
