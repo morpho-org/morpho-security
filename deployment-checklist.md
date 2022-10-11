@@ -4,7 +4,7 @@
 
 ### Deployment via a Gnosis Safe
 
-The deployments of the core contracts of the Morpho protocol and its periphery are done by the 5/9 multisig of the Morpho DAO ([details](https://docs.morpho.xyz/usdmorpho/governance/zodiac-and-progressive-decentralization). They are done through the [AdmoDeployer contract](https://etherscan.io/address/0x08072d67a6f158fe2c6f21886b0742736e925536).```
+The deployments of the core contracts of the Morpho protocol and its periphery are done by the 5/9 multisig of the Morpho DAO ([details](https://docs.morpho.xyz/usdmorpho/governance/zodiac-and-progressive-decentralization)). They are done through the [AdmoDeployer contract](https://etherscan.io/address/0x08072d67a6f158fe2c6f21886b0742736e925536).
 
 - [ ] Before submitting the transaction, check that the bytecode used corresponds to the correct version (commit, tag) with the correct paramaters (constructor and initializer arguments).
 - [ ] For an upgradeable contract, an initialization tx MUST be done atomically to initialize the contract to prevent it from being hijacked.
@@ -30,7 +30,12 @@ For less critical pieces of code, a burner might be used for developments. The d
 - [ ] The deployed contract MUST be checked by the "Deployment Team" (ownership, basic getters, code, etc.).
 - [ ] Once verified, the contract MUST be added to Tenderly in the correct projects with the correct labels.
 - [ ] If ther are some governance functions, update the operator accordingly.
-- [ ] Set up monitoring for the contracts in Tenderly.
+- [ ] Set up monitoring for the contracts:
+  - [ ] Add governance event tracking to Tenderly Alerts linked to the correct Slack channel.
+  - [ ] Add monitoring of the contract flow according to the data team.
+  - [ ] Add revert alerts from Tenderly to the correct slack channel.
+  - [ ] Check the dApps integrations and update them accordingly.
+  - [ ] Add/Update the signatures allowed to the Operator contract if needed.
 - [ ] Update Immunefi bounty if necessary.
 
 ## Notes

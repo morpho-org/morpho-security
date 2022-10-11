@@ -2,13 +2,12 @@
 
 ## Discussion Phase
 
-- [ ] Only assets that are worth it must be listed.
 - [ ] Follow [Trail Of Bits integration token checklist](https://github.com/crytic/building-secure-contracts/blob/master/development-guidelines/token_integration.md).
 - [ ] Check for ERC20 compliance with [Slither](https://github.com/crytic/slither/wiki/ERC-Conformance).
 - [ ] Check the code of the pool token and check for any differences from other pool token implementations.
 - [ ] Check if the asset is a rebasing token (such as stETH) and ensure that it is handled appropriately.
 - [ ] Look through the governance discussions and proposals of the asset in the underlying pool's governance forum and read through any of the asset's risk reports.
-- [ ] Check global risk parameters (such as LTV or LT on Aave and collateral factor on Compound).
+- [ ] Check the risk parameters of the asset on the underlying pool (LTV or LT on Aave and collateral factor on Compound, liquidation incentive).
 - [ ] Check if the asset is supply only.
 - [ ] Check if the asset has a borrow cap.
 - [ ] Check if there exists any other special treatment of the asset in the underlying contracts.
@@ -27,7 +26,7 @@
 ## After Listing
 
 - [ ] Verify that the asset has been listed on Morpho with the correct parameters:
-  - [ ] Pool token address token is correct
+  - [ ] Pool token address token is correct.
   - [ ] Reserve factor and P2P index cursor are correct.
   - [ ] P2P and pool indexes have been updated.
   - [ ] Pool token address has been added to the markets created.
