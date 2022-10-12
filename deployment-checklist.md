@@ -29,7 +29,7 @@ For less critical pieces of code, a burner might be used for developments. The d
 - [ ] After deployment, the contract MUST be verified on Etherscan asap. The best way is by using [foundry](https://book.getfoundry.sh/forge/deploying?highlight=verify#verifying-a-pre-existing-contract).
 - [ ] The deployed contract MUST be checked by the "Deployment Team" (ownership, basic getters, code, etc.).
 - [ ] Once verified, the contract MUST be added to Tenderly in the correct projects with the correct labels.
-- [ ] If ther are some governance functions, update the operator accordingly.
+- [ ] If there are some governance functions, update the operator accordingly.
 - [ ] Set up monitoring for the contracts:
   - [ ] Add governance event tracking to Tenderly Alerts linked to the correct Slack channel.
   - [ ] Add monitoring of the contract flow according to the data team.
@@ -38,6 +38,7 @@ For less critical pieces of code, a burner might be used for developments. The d
   - [ ] Add/Update the signatures allowed to the Operator contract if needed.
 - [ ] Update Immunefi bounty if necessary.
 - [ ] Update the documentation.
+- [ ] Commit the deployed changes to the Open Source repository if necessary.
 
 ## Notes
 
