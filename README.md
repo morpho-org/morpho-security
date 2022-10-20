@@ -4,7 +4,11 @@ This repo is a collection of checklists and processes for Morpho's smart contrac
 
 ## Contents
 
+### Morpho Internal Checklists
 - **[Asset Listing Checklist](./asset-listing-checklist.md)**
 - **[Deployment Checklist](./deployment-checklist.md)**
 - **[Upgrade Checklist](./upgrade-checklist.md)**
 - **[Bounty and Contacts](./upgrade-checklist.md)**
+
+### Morpho Integrators Checklists
+- **[Integration Checklist](./integration-checklist.md)**
