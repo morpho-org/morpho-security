@@ -1,11 +1,11 @@
 # Integration Checklist
 
-This checklist is here to ease integrations of Morpho and mkae them safer.
+This checklist is here to ease integrations of Morpho and make them safer.
 
 ## General Comments
 
-- [ ] Make sure the contract calling Morpho's core contracts or Morpho's vaults has the capacitiy to withdraw ERC20 tokens from the contract. Else, MORPHO rewards or underlying pool's rewards would be stuck in the contract (forever...).
-- [ ] On Compound the cETH contract token does not behave the same way as the other cTokens (the underlying getter does not exist). Thus, you cannot use the cToken getter to check the underlying address.
+- [ ] Make sure the contract calling Morpho's core contracts or Morpho's vaults has the capacitiy to withdraw ERC20 tokens from the contract. Else, MORPHO rewards or the underlying pool's rewards would be stuck in the contract (forever...).
+- [ ] On Compound the cETH contract token does not behave the same way as the other cTokens (e.g. there's no `underlying()` getter, amount need to be passed as `msg.value`, ...).
 
 ## Morpho Core Protocol Integration
 
