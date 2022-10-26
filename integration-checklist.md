@@ -10,7 +10,7 @@ This checklist is here to ease integrations of Morpho and make them safer.
 ## Morpho Core Protocol Integration
 
 - [ ] Check that the interfaces you are using (Morpho and Lens) are up-to-date.
-- [ ] You can repay/withdraw the whole debt/supply by passing type(uint256).max as argument to avoid leaving dust on Morpho.
+- [ ] You can repay/withdraw the whole debt/supply by passing `type(uint256).max` as argument to avoid leaving dust on Morpho.
 - [ ] Positions on Morpho are not fungible. This means that you will not receive an interest bearing token as on Aave or Compound. However, Morpho will store your position in its storage. To get a fungible position on top of morpho, you'll need to use the Morpho's ERC4626-based vaults.
 - [ ] On Morpho, it's allowed to supply on behalf of another address.
 
