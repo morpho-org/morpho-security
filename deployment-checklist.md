@@ -28,8 +28,12 @@ For less critical pieces of code, a burner might be used for developments. The d
 
 - [ ] After deployment, the contract MUST be verified on Etherscan asap. The best way is by using [foundry](https://book.getfoundry.sh/forge/deploying?highlight=verify#verifying-a-pre-existing-contract).
 - [ ] The deployed contract MUST be checked by the "Deployment Team" (ownership, basic getters, code, etc.).
-- [ ] Once verified, the contract MUST be added to Tenderly in the correct projects with the correct labels.
-- [ ] If there are some governance functions, update the operator accordingly.
+- [ ] Verify deployed contracts on Etherscan.
+- [ ] Add deployed contracts to the corresponding Tenderly project:
+  - [ ] Tag them with the deployment version.
+  - [ ] Update the tag of proxy contracts to the version of the deployed implementation.
+  - [ ] Update the tx visibility of the previous implementation to "Not Visible".
+- [ ] If there are new governance functions, update the governance operator accordingly.
 - [ ] Set up monitoring for the contracts:
   - [ ] Add governance event tracking to Tenderly Alerts linked to the correct Slack channel.
   - [ ] Add monitoring of the contract flow according to the data team.

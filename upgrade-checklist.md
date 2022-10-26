@@ -28,8 +28,13 @@
 
 ### Monitoring Phase
 
-- [ ] If some changes are made to governance functions, update the operator accordingly.
-- [ ] Monitor contract with Tenderly or custom bots.
+- [ ] Verify deployed contracts on Etherscan.
+- [ ] Add deployed contracts to the corresponding Tenderly project:
+  - [ ] Tag them with the deployment version.
+  - [ ] Update the tag of proxy contracts to the version of the deployed implementation.
+  - [ ] Update the tx visibility of the previous implementation to "Not Visible".
+- [ ] If some changes are made to governance functions, update the governance operator accordingly.
+- [ ] If necessary, create Tenderly monitoring or custom bots.
 - [ ] Update Immunefi bounty if necessary.
 - [ ] Update the documentation.
 
