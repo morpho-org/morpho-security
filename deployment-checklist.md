@@ -33,13 +33,13 @@ For less critical pieces of code, a burner might be used for developments. The d
   - [ ] Tag them with the deployment version.
   - [ ] Update the tag of proxy contracts to the version of the deployed implementation.
   - [ ] Update the tx visibility of the previous implementation to "Not Visible".
-- [ ] If there are new governance functions, update the governance operator accordingly.
+- [ ] If there are new governance functions, update the Governance Operator on Zodiac accordingly.
 - [ ] Set up monitoring for the contracts:
   - [ ] Add governance event tracking to Tenderly Alerts linked to the correct Slack channel.
   - [ ] Add monitoring of the contract flow according to the data team.
   - [ ] Add revert alerts from Tenderly to the correct slack channel.
   - [ ] Check the dApps integrations and update them accordingly.
-  - [ ] Add/Update the signatures allowed to the Operator contract if needed.
+  - [ ] Add/Update the signatures allowed to the Governance Operator on Zodiac contract if needed.
 - [ ] Update Immunefi bounty if necessary.
 - [ ] Update the documentation.
 - [ ] Commit the deployed changes to the Open Source repository if necessary.
