@@ -11,6 +11,7 @@
 
 - [ ] The change MUST be implemented only if it has passed the "Discussion Phase".
 - [ ] The change MUST NOT modify the ABI (else it could break integrations). If changes to the ABI cannot be avoided, then integrators MUST be warned in advance and ideally discussed via governance.
+- [ ] The changes MUST NOT change the events that are logged. This could break The Graph.
 - [ ] The change MUST NOT break the storage layout in any way. To continuously check this condition in the development process, this [tool](https://github.com/Rubilmax/foundry-storage-check) developed by [Rubilmax](https://github.com/Rubilmax) integrated into the CI can help.
 - [ ] Changes MUST be thouroughly tested with unit tests.
 - [ ] Changes MUST be audited.
