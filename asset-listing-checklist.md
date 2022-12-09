@@ -13,7 +13,7 @@
 - [ ] Check if the asset is supply only (if true pause the borrow and disable the P2P).
 - [ ] Check if the asset has a borrow cap.
 - [ ] Check if there exists any other special treatment of the asset in the underlying contracts.
-- [ ] Check the token decimals and its price. For the heap data structure, amounts cannout exceed `2**96 ~ 7.9e28`. Thus, low value assets with 18 decimals can be problematic.
+- [ ] Check the token decimals and its price. For the heap data structure, amounts cannot exceed `2**96 ~ 7.9e28`. Thus, low value assets with 18 decimals can be problematic.
 - [ ] Do a governance post.
 
 ## Before Listing
