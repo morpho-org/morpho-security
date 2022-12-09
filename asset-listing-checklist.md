@@ -11,12 +11,14 @@
 - [ ] Check if the asset is supply only (if true pause the borrow and disable the P2P).
 - [ ] Check if the asset has a borrow cap.
 - [ ] Check if there exists any other special treatment of the asset in the underlying contracts.
+- [ ] Check if the asset is deprecated.
 - [ ] Do a governance post.
 
 ## Before Listing
 
 - [ ] If the asset passes the "Discussion Phase", the asset MUST be tested (integration test and fuzzing) on a fork. The protocol MUST behave as usual with this new asset.
 - [ ] Morpho's liquidation bot MUST be able to liquidate on this asset (if the asset is borrowable).
+- [ ] Check if the asset is paused, frozen or another pool's flag preventing a smooth listing.
 
 ## Listing
 
