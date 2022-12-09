@@ -2,6 +2,7 @@
 
 ## Discussion Phase
 
+- [ ] Check if the asset is deprecated on the pool.
 - [ ] Follow [Trail Of Bits integration token checklist](https://github.com/crytic/building-secure-contracts/blob/master/development-guidelines/token_integration.md).
 - [ ] Check for ERC20 compliance with [Slither](https://github.com/crytic/slither/wiki/ERC-Conformance).
 - [ ] Check the code of the pool token and check for any differences from other pool token implementations.
@@ -11,7 +12,6 @@
 - [ ] Check if the asset is supply only (if true pause the borrow and disable the P2P).
 - [ ] Check if the asset has a borrow cap.
 - [ ] Check if there exists any other special treatment of the asset in the underlying contracts.
-- [ ] Check if the asset is deprecated.
 - [ ] Do a governance post.
 
 ## Before Listing
