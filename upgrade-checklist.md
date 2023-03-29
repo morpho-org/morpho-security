@@ -43,6 +43,7 @@
   - [ ] Add/Update the signatures allowed to the Governance Operator on Zodiac contract if needed.
 - [ ] Update Immunefi bounty if necessary.
 - [ ] Update the documentation.
+- [ ] Update [morpho-ethers-contract](https://github.com/morpho-labs/morpho-ethers-contract) if the ABI is changed.
 - [ ] Commit the deployed changes to the Open Source repository if necessary.
 
 ## Specific Upgrades
