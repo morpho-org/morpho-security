@@ -26,7 +26,7 @@
 ## Listing
 
 - [ ] Prepare the transaction to be signed and executed on the 5/9 pre-DAO multisig.
-- [ ] Everyone in the "Deployment Team" MUST verify the tx and its parameters (correct reserve factor and peer-to-peer index cursor). Also, the tx might be sending some dust of underlying tokens to the Morpho contract to avoid any rounding issue. For Morpho-AaveV3, some aTokens of the related assets should be sent to the contract, so that, even if all supplied assets are removed from Morpho, the pool still considered the asset as a collateral for Morpho (unless it's unset by the Morpho DAO later on).
+- [ ] Everyone in the "Deployment Team" MUST verify the tx and its parameters (correct reserve factor and peer-to-peer index cursor). Also, the tx might be sending some dust of underlying tokens to the Morpho contract to avoid any rounding issue. For Morpho-AaveV3, some aTokens of the related assets should be sent to the contract, so that, even if all supplied assets are removed from Morpho, the pool still considers the asset as a collateral for Morpho (unless it's unset by the Morpho DAO later on).
 - [ ] A simulation MUST be done and everyone MUST check that the parameters are correct after listing.
 
 ## After Listing
